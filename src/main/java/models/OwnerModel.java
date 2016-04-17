@@ -1,6 +1,6 @@
 package models;
 /**
- * Klasa przechowywuj¹ca dane o w³¹œcicielu lokalu.
+ * Klasa przechowywujÄ…ca dane o wÅ‚aÅ›cicielu lokalu.
  * @author Tomek
  */
 public class OwnerModel {
@@ -13,11 +13,11 @@ public class OwnerModel {
 	 */
 	private String login;
 	/**
-	 * Has³o.
+	 * HasÅ‚o.
 	 */
 	private String password;
 	/**
-	 * Imiê.
+	 * ImiÄ™.
 	 */
 	private String name;
 	/**
@@ -30,15 +30,15 @@ public class OwnerModel {
 	private String phoneNumber;
 	
 	/**
-	 * Konstruktor który tworzy obiekt bêd¹cy w³aœcicielem.
+	 * Konstruktor ktÃ³ry tworzy obiekt bÄ™dÄ…cy wÅ‚aÅ›cicielem.
 	 * @param id
 	 * 			Numer identyfikacyjny
 	 * @param login
 	 * 			Login
 	 * @param password
-	 * 			Has³o
+	 * 			HasÅ‚o
 	 * @param name
-	 * 			Imiê
+	 * 			ImiÄ™
 	 * @param lastName
 	 * 			Nazwisko
 	 * @param phoneNumber
@@ -83,31 +83,31 @@ public class OwnerModel {
 		this.login = login;
 	}
 	/**
-	 * Zwraca aktulane has³o.
-	 * @return Has³o
+	 * Zwraca aktulane hasÅ‚o.
+	 * @return HasÅ‚o
 	 */
 	public String getPassword() {
 		return password;
 	}
 	/**
-	 * Ustawia has³o na podane.
+	 * Ustawia hasÅ‚o na podane.
 	 * @param password
-	 * 			Has³o
+	 * 			HasÅ‚o
 	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
 	/**
-	 * Zwraca aktualne imiê.
-	 * @return Imiê
+	 * Zwraca aktualne imiÄ™.
+	 * @return ImiÄ™
 	 */
 	public String getName() {
 		return name;
 	}
 	/**
-	 * Ustawia imiê na podane.
+	 * Ustawia imiÄ™ na podane.
 	 * @param name
-	 * 			Imiê
+	 * 			ImiÄ™
 	 */
 	public void setName(String name) {
 		this.name = name;
