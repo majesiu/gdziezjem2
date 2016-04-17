@@ -5,3 +5,5 @@ machine:
 test:
   override:
     - mvn site
+    - mvn compile
+    - mvn package
