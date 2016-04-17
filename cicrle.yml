@@ -4,4 +4,4 @@ machine:
 
 test:
   override:
-    - maven site
+    - mvn site
