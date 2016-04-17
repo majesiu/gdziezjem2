@@ -9,18 +9,18 @@ import javax.net.ssl.HttpsURLConnection;
 
 import utils.StringUtils;
 /**
- * Klasa pobieraj¹ca dokument HTTP z podanego adresu.
+ * Klasa pobierajÄ…ca dokument HTTP z podanego adresu.
  * @author Tomek
  *
  */
 public class HttpsGetter {
 	/**
-	 * Próbuje nawi¹zaæ po³¹czenie ze stron¹ o podanym adresie URL, i pobraæ jej zawartoœæ.
+	 * PrÃ³buje nawiÄ…zaÄ‡ poÅ‚Ä…czenie ze stronÄ… o podanym adresie URL, i pobraÄ‡ jej zawartoÅ›Ä‡.
 	 * @param urlStr
-	 * 			Adres URL strony któr¹ chemy pobraæ
-	 * @return	Dokument HTTP znajduj¹cy siê pod podanym adresem, je¿eli po³¹czenie zosta³o poprawnie nawi¹zane
+	 * 			Adres URL strony ktÃ³rÄ… chemy pobraÄ‡
+	 * @return	Dokument HTTP znajdujÄ…cy siÄ™ pod podanym adresem, jeÅ¼eli poÅ‚Ä…czenie zostaÅ‚o poprawnie nawiÄ…zane
 	 * @throws IOException
-	 * 			Wyj¹tek wyrzucany je¿eli podczas próby po³¹czenia ze stron¹ o padanym adresie otrzymamy kod zwrotny inyy ni¿ OK (po³¹czenie nie powiod³o siê) 
+	 * 			WyjÄ…tek wyrzucany jeÅ¼eli podczas prÃ³by poÅ‚Ä…czenia ze stronÄ… o padanym adresie otrzymamy kod zwrotny inny niÅ¼ OK (poÅ‚Ä…czenie nie powiodÅ‚o siÄ™) 
 	 */
 	public static String HttpsGet(String urlStr) throws IOException{
 		URL url = new URL(urlStr);
