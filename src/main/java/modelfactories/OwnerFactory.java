@@ -1,11 +1,25 @@
 package modelfactories;
 
-import models.OwnerModel;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class OwnerFactory extends ModelFactory<OwnerModel> {
-
+import models.DinnerTypeModel;
+import models.OwnerModel;
+/**
+ * Klasa tworz¹ca obiekty typu OwnerModel, korzystaj¹ca z wzorca projektowego fabryki.
+ * @author Tomek
+ * @see OwnerModel
+ * @see ModelFactory
+ */
+public class OwnerFactory extends ModelFactory<OwnerModel>{
+	/**
+	 * Tworzy obiekt typu OwnerModel korzystaj¹c z obiektu typu JSONObject
+	 * 
+	 * @param o
+	 * 			Obiekt JSON
+	 * @return 
+	 * 			Obiekt typu OwnerModel
+	 */
 	@Override
 	public OwnerModel createModelFromJSONObject(JSONObject o) throws JSONException {
 		int id = o.getInt("id");
