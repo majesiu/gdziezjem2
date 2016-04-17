@@ -10,7 +10,7 @@ import org.json.JSONTokener;
 
 import models.DinnerTypeModel;
 /**
- * Klasa tworz¹ca obiekty typu DinnerTypeModel, korzystaj¹ca z wzorca projektowego fabryki
+ * Klasa tworzÄ…ca obiekty typu DinnerTypeModel, korzystajÄ…ca z wzorca projektowego fabryki
  * @author Tomek
  * @see DinnerTypeModel
  * @see ModelFactory
@@ -18,7 +18,7 @@ import models.DinnerTypeModel;
 public class DinnerTypeFactory extends ModelFactory<DinnerTypeModel> {
 	
 	/**
-	 * Tworzy obiekt typu DinnerTypeModel korzystaj¹c z obiektu typu JSONObject
+	 * Tworzy obiekt typu DinnerTypeModel korzystajÄ…c z obiektu typu JSONObject
 	 * 
 	 * @param o
 	 * 			Obiekt JSON
