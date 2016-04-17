@@ -7,7 +7,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 /**
- * Klasa przechowywuj¹ca dane o posi³ku.
+ * Klasa przechowywujÄ…ca dane o posiÅ‚ku.
  * @author Tomek
  */
 public class DinnerTypeModel {
@@ -16,22 +16,22 @@ public class DinnerTypeModel {
 	 */
 	private int id;
 	/**
-	 * Nazwa posi³ku.
+	 * Nazwa posiÅ‚ku.
 	 */
 	private String name;
 	/**
-	 * Konstruktor który tworzy obiekt bêd¹cy posi³kiem.
+	 * Konstruktor ktÃ³ry tworzy obiekt bÄ™dÄ…cy posiÅ‚kiem.
 	 * @param id
 	 * 			Numer identyfikacyjny
 	 * @param name
-	 * 			Nazwa posi³ku
+	 * 			Nazwa posiÅ‚ku
 	 */
 	public DinnerTypeModel(int id, String name){
 		setId(id);
 		setName(name);
 	}
 	/**
-	 * @return Numer identyfikacyjny posi³ku
+	 * @return Numer identyfikacyjny posiÅ‚ku
 	 */
 	public int getId() {
 		return id;
@@ -45,15 +45,15 @@ public class DinnerTypeModel {
 		this.id = id;
 	}
 	/**
-	 * @return Nazwê posi³ku
+	 * @return NazwÄ™ posiÅ‚ku
 	 */
 	public String getName() {
 		return name;
 	}
 	/**
-	 * Ustawia nazwê posi³ku na podan¹.
+	 * Ustawia nazwÄ™ posiÅ‚ku na podanÄ….
 	 * @param name
-	 * 			Nazwa posi³ku
+	 * 			Nazwa posiÅ‚ku
 	 */
 	public void setName(String name) {
 		this.name = name;
