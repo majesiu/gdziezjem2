@@ -10,16 +10,16 @@ import models.DinnerTypeModel;
 import models.OwnerModel;
 import models.RestaurantModel;
 /**
- * G³owna klasa programu.
+ * GÅ‚owna klasa programu.
  * @author Tomek
  *
  */
 public class Program {
 	/**
-	 * G³ówna funkcja programu, uruchamiana przy jego starcie. Próbuje pobraæ dane na temat typów posi³ków, lokali i ich w³aœcicieli z serwera aplikacji,
-	 * stworzyæ kontenery w których mo¿e przechowaæ obiekty przechowywuj¹ce wczeœniej pobrane dane, a nastêpnie wypisaæ informacje zgromadzone w kontenerach. 
-	 * W razie niepowodzenia ³apie wyj¹tki i wypisuje stos na konsolê. 
-	 * @param args
+	 * GÅ‚Ã³wna funkcja programu, uruchamiana przy jego starcie. PrÃ³buje pobraÄ‡ dane na temat typÃ³w posiÅ‚kÃ³w, lokali i ich wÅ‚aÅ›cicieli z serwera aplikacji,
+	 * stworzyÄ‡ kontenery w ktÃ³rych moÅ¼e przechowaÄ‡ obiekty przechowywujÄ…ce wczeÅ›niej pobrane dane, a nastÄ™pnie wypisaÄ‡ informacje zgromadzone w kontenerach. 
+	 * W razie niepowodzenia Å‚apie wyjÄ…tki i wypisuje stos na konsolÄ™. 
+	 * @param args 
 	 * 			Argumenty przekazywane przy starcie programu.
 	 */
 	public static void main(String[] args) {
