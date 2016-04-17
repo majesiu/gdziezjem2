@@ -6,14 +6,14 @@ import org.json.JSONObject;
 import models.DinnerTypeModel;
 import models.OwnerModel;
 /**
- * Klasa tworz¹ca obiekty typu OwnerModel, korzystaj¹ca z wzorca projektowego fabryki.
+ * Klasa tworzÄ…ca obiekty typu OwnerModel, korzystajÄ…ca z wzorca projektowego fabryki.
  * @author Tomek
  * @see OwnerModel
  * @see ModelFactory
  */
 public class OwnerFactory extends ModelFactory<OwnerModel>{
 	/**
-	 * Tworzy obiekt typu OwnerModel korzystaj¹c z obiektu typu JSONObject
+	 * Tworzy obiekt typu OwnerModel korzystajÄ…c z obiektu typu JSONObject
 	 * 
 	 * @param o
 	 * 			Obiekt JSON
