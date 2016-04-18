@@ -8,4 +8,4 @@ test:
     
 general:
   artifacts:
-    - "target/site/apidocs"
+    - "target/site"
