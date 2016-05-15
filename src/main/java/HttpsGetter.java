@@ -22,14 +22,14 @@ public class HttpsGetter {
 		HttpsURLConnection connection = (HttpsURLConnection)url.openConnection();
 		return HttpsGet_inside(connection);
 	}
-	private static String HttpsGet_inside(HttpsURLConnection connection) throws IOException{ // do mocka
+	public static String HttpsGet_inside(HttpsURLConnection connection) throws IOException{ // do mocka
 		connection.setRequestMethod("GET");
-
 		if(connection.getResponseCode() != 200){
 			throw new IOException(connection.getResponseMessage());
 		}
 		String responseData = StringUtils.getStringFromInputStream(connection.getInputStream());
 		connection.disconnect();
+		System.out.println("XX)");
 		return responseData;
 	}
 }
