@@ -1,0 +1,10 @@
+modelfactories\OwnerFactory.class
+modelfactories\RestaurantFactory.class
+models\RestaurantModel.class
+Program.class
+HttpsGetter.class
+modelfactories\DinnerTypeFactory.class
+utils\StringUtils.class
+models\DinnerTypeModel.class
+modelfactories\ModelFactory.class
+models\OwnerModel.class
