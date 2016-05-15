@@ -5,6 +5,8 @@ machine:
 test:
   override:
     - mvn test
+    - mvn site
+    - mvn package
     
 general:
   artifacts:

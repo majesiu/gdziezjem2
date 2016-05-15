@@ -1,9 +1,16 @@
+import modelfactories.DinnerTypeFactory;
+import modelfactories.OwnerFactory;
+import modelfactories.RestaurantFactory;
+import models.DinnerTypeModel;
+import models.OwnerModel;
+import models.RestaurantModel;
 import org.junit.Before;
 import org.mockito.InOrder;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.*;
 import java.net.MalformedURLException;
+import java.util.List;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -41,5 +48,41 @@ public class HttpsGetterTest {
         inOrder.verify(mock_connection).getResponseCode();
         inOrder.verify(mock_connection).getInputStream();
         inOrder.verify(mock_connection).disconnect();
+    }
+    @org.junit.Test
+    public void httpsGet_appsite1() throws IOException {
+        String result = getter.HttpsGet("https://gdziezjem.herokuapp.com/api/gdziezjem/dinnerTypes");
+        assertNotNull(result);
+    }
+    @org.junit.Test
+    public void httpsGet_appsite2() throws IOException {
+        String result = getter.HttpsGet("https://gdziezjem.herokuapp.com/api/gdziezjem/owners");
+        assertNotNull(result);
+    }
+    @org.junit.Test
+    public void httpsGet_appsite3() throws IOException {
+        String result = getter.HttpsGet("https://gdziezjem.herokuapp.com/api/gdziezjem/restaurants");
+        assertNotNull(result);
+    }
+    @org.junit.Test(expected = java.io.IOException.class)
+    public void httpsGet_appsite4() throws IOException {
+        String result = getter.HttpsGet("https://gdziezjem.herokuapp.com/api/gdziezjem/");
+        assertNotNull(result);
+    }
+    @org.junit.Test
+    public void httpsGet_owners() throws IOException {
+        String ownersJSON = HttpsGetter.HttpsGet("https://gdziezjem.herokuapp.com/api/gdziezjem/owners?format=json");
+        List<OwnerModel> owners = new OwnerFactory().createFromJSON(ownersJSON);
+        assertNotNull(owners);
+    }@org.junit.Test
+    public void httpsGet_menu() throws IOException {
+        String dinnerTypesJSON = HttpsGetter.HttpsGet("https://gdziezjem.herokuapp.com/api/gdziezjem/dinnerTypes?format=json");
+        List<DinnerTypeModel> dinnerTypes = new DinnerTypeFactory().createFromJSON(dinnerTypesJSON);
+        assertNotNull(dinnerTypes);
+    }@org.junit.Test
+    public void httpsGet_restaurants() throws IOException {
+        String restaurantsJSON = getter.HttpsGet("https://gdziezjem.herokuapp.com/api/gdziezjem/restaurants?format=json");
+        List<RestaurantModel> restaurants = new RestaurantFactory().createFromJSON(restaurantsJSON);
+        assertNotNull(restaurants);
     }
 }
